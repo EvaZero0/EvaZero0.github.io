@@ -1,5 +1,27 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: aqua;
+  background-color: rgb(136, 92, 139);
+}
+
+main {
+  color: pink;
+  height: 100vh;
+}
+
+
+nav {
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  color: rgb(12, 13, 70);
 }
