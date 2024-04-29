@@ -9,6 +9,9 @@ main {
   height: 100vh;
 }
 
+section {
+  height: 100vh;
+}
 
 nav {
   padding: 15px;
@@ -24,4 +27,44 @@ nav ul {
 
 nav ul li a {
   color: rgb(12, 13, 70);
+}
+
+section.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 20px;
+}
+
+section.hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.hero-text h2 {
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
+.text-accent {
+  color: orangered;
+}
+
+.text-primary {
+  color: rgb(54, 35, 35);
+}
+
+.hero img {
+  height: 100%;
+  max-width: 500px;
+  object-fit: contain;
+  border-radius: 15px;
+  min-width: 200px;
 }
