@@ -48,7 +48,6 @@ section.hero .hero-text {
   font-size: 2.5em;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
-  font-family: ;
 }
 
 .hero-text h2 {
@@ -62,6 +61,23 @@ section.hero .hero-text {
   border-radius: 15px 0 15px 0;
   background-color: rgba(0, 0, 0, 0.178);
   font-style: italic;
+  width: 40ch;
+}
+
+.hero-text p::before {
+  content: "“";
+  color: orangered;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: bolder;
+}
+
+.hero-text p::after {
+  content: "”";
+  color: orangered;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: bolder;
 }
 
 .text-accent {
@@ -79,4 +95,19 @@ section.hero .hero-text {
   border-radius: 15px;
   min-width: 200px;
   width: 100%;
+}
+
+section.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+section.skills ul li {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
 }
