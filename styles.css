@@ -89,8 +89,7 @@ section.hero .hero-text {
 }
 
 .hero img {
-  height: 400px;
-  max-width: 500px;
+  max-width: 400px;
   object-fit: contain;
   border-radius: 15px;
   min-width: 200px;
@@ -110,4 +109,14 @@ section.skills ul li {
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
+}
+
+section.skills ul li .skill-shadow {
+  background-color: rgba(32, 16, 16, 0.233);
+  border-radius: 1rem;
+}
+
+section.skills ul li .skill-bar {
+  border-radius: 1rem;
+  width: 70%;
 }
