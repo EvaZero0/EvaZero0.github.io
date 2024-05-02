@@ -9,11 +9,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(136, 92, 139);
+  font-family: Ubuntu;
 }
 
 main {
   color: pink;
   height: 100vh;
+  width: 100%;
   position: fixed;
   overflow: scroll;
   scrollbar-width: none;
@@ -89,6 +91,7 @@ section.hero .hero-text {
   font-size: 2.5em;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
+  font-family: Protest;
 }
 
 .hero-text h2 {
