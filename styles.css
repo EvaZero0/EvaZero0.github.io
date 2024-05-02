@@ -56,7 +56,7 @@ nav ul li {
 nav ul li:not(:last-child)::after {
   content: "|";
   margin-left: 1rem;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 nav ul li a {
   color: var(--secondary-color);
@@ -67,8 +67,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-color: var(--accent-color);
-text-shadow: 0 0 10px var(--primary-color);
+  color: var(--accent-color);
+  text-shadow: 0 0 10px var(--primary-color);
 }
 
 section.hero {
@@ -271,4 +271,54 @@ ul.timeline-items .timeline-content:hover {
   font-size: 16px;
   font-weight: 300;
   margin: 0;
+}
+
+section.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+section.projects ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+section.projects ul li {
+  border: 1px solid white;
+  border-radius: 1rem;
+  max-width: 400px;
+  min-width: 200px;
+  background-color: var(--secondary-color);
+  box-shadow: 4px 4px 10px var(--primary-color);
+  flex-shrink: 1;
+  flex-basis: 400px;
+}
+
+section.projects ul li img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+section.projects ul li h4 {
+  margin: 0.5rem 1rem;
+  font-size: 1.2em;
+}
+section.projects ul li p {
+  margin: 0 1rem 0.5rem 1rem;
+}
+
+section.projects ul li button {
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  background-color: var(--accent-color);
+  font-size: 1.1em;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 4px black;
 }
