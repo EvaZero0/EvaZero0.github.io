@@ -332,3 +332,30 @@ section.projects ul li:hover {
   box-shadow: 6px 6px 20px var(--accent-color);
   transform: translateY(-1rem);
 }
+
+/* Media queries*/
+@media screen and (max-width: 900px) {
+  section.skills ul {
+    margin-top: 0;
+    gap: 1rem;
+    /* transform: scale(0.8); */
+  }
+  section.skills ul li {
+    width: 80%;
+  }
+  section.timeline {
+    padding: 0.6rem;
+  }
+  section.timeline h2.timeline-title {
+    margin: 0;
+  }
+  section.timeline ul.timeline-items {
+    max-width: fit-content;
+  }
+  .timeline-content p {
+    max-width: 30vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
