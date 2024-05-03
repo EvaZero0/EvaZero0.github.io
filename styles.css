@@ -280,6 +280,7 @@ section.projects {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  box-sizing: border-box;
 }
 
 section.projects ul {
@@ -345,7 +346,7 @@ section.projects ul li:hover {
     height: 100%;
     justify-content: end;
   }
-  
+
   section.hero .hero-text p {
     margin: 0.5rem;
     padding: 0.5rem;
@@ -370,6 +371,7 @@ section.projects ul li:hover {
   }
   section.timeline {
     padding: 0.6rem;
+    justify-content: end;
   }
   section.timeline h2.timeline-title {
     margin: 0;
