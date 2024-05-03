@@ -90,7 +90,8 @@ section.hero .hero-text {
   font-size: 2.5em;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
-  font-family: Protest;
+  font-family: Silkscreen;
+  font-weight: 400;
 }
 
 .hero-text h2 {
