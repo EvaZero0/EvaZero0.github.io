@@ -358,4 +358,14 @@ section.projects ul li:hover {
     white-space: nowrap;
     overflow: hidden;
   }
+  ul.timeline-items li:nth-child(odd) .timeline-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  /* Projects mobile section */
+
+  section.projects {
+    
+  }
 }
