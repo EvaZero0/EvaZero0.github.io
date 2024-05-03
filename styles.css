@@ -290,7 +290,6 @@ section.projects ul {
   gap: 2rem;
 }
 section.projects ul li {
-  border: 1px solid white;
   border-radius: 1rem;
   max-width: 400px;
   min-width: 200px;
@@ -335,6 +334,32 @@ section.projects ul li:hover {
 
 /* Media queries*/
 @media screen and (max-width: 900px) {
+  section.hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+  }
+
+  section.hero .hero-text {
+    font-size: 0.9em;
+    height: 100%;
+    justify-content: end;
+  }
+  
+  section.hero .hero-text p {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 55ch;
+  }
+
+  section.hero .hero-text h1{
+    margin: 0;
+  }
+
+  section.hero img {
+    height: 100%;
+  }
+
   section.skills ul {
     margin-top: 0;
     gap: 1rem;
@@ -365,7 +390,33 @@ section.projects ul li:hover {
   }
   /* Projects mobile section */
 
-  section.projects {
-    
+  section.projects ul {
+    flex-direction: column;
+  }
+  section.projects ul li {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    width: 90%;
+    flex-basis: auto;
+    max-height: 25vh;
+  }
+
+  section.projects ul li img {
+    width: auto;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  section.projects ul li .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.projects ul li .card-content a {
+  }
+
+  section.projects ul li:hover {
+    transform: translateX(1rem);
   }
 }
