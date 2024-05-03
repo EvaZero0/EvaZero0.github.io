@@ -353,7 +353,7 @@ section.projects ul li:hover {
     width: 55ch;
   }
 
-  section.hero .hero-text h1{
+  section.hero .hero-text h1 {
     margin: 0;
   }
 
@@ -372,6 +372,7 @@ section.projects ul li:hover {
   section.timeline {
     padding: 0.6rem;
     justify-content: end;
+    transform: scale(0.9);
   }
   section.timeline h2.timeline-title {
     margin: 0;
@@ -394,14 +395,25 @@ section.projects ul li:hover {
 
   section.projects ul {
     flex-direction: column;
+    align-items: center;
   }
   section.projects ul li {
     display: flex;
     flex-direction: row;
     max-width: 90%;
+    min-width: 100px;
     width: 90%;
     flex-basis: auto;
     max-height: 25vh;
+  }
+
+  section.projects ul li .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.projects ul li:hover {
+    transform: translateX(1rem);
   }
 
   section.projects ul li img {
@@ -410,15 +422,9 @@ section.projects ul li:hover {
     border-radius: 1rem 0 0 1rem;
   }
 
-  section.projects ul li .card-content {
-    display: flex;
-    flex-direction: column;
-  }
-
   section.projects ul li .card-content a {
-  }
-
-  section.projects ul li:hover {
-    transform: translateX(1rem);
+    margin-top: auto;
+    margin-bottom: 0.3rem;
+    align-self: start;
   }
 }
